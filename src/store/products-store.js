@@ -3,7 +3,6 @@ import {initStore} from "../hooks/use-store";
  const configureStore = () => {
     const actions = {
         TOGGLE_FAV: (curState, productId) => {
-            console.log(productId)
             const prodIndex = curState.products.findIndex(
                 p => p.id === productId
             );
